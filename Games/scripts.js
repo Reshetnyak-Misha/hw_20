@@ -3,12 +3,13 @@ alert("Вам нужно угадать число от 0 до 10, правил�
 
 if (confirm("Желаете испытать удачу?")) {
     alert("Тогда удачи вам");
-    // let person = +prompt()
     const randomNumber = Math.floor(Math.random() * 10) + 1;
+
     if (prompt() == randomNumber) {
         alert("Поздравляю");
-    }
-    else {
+    } else if (isNaN(confirm) === true) {
+        alert("Увы, это не число");
+    } else {
         alert("Увы, правильное число: " + randomNumber);
     }
 } else {
